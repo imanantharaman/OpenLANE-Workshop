@@ -136,3 +136,15 @@ libs.tech Contains files specific to tools such as Magic, ngspice etc.,.
 
 
 ![](images/106.png)
+
+### Design preparation
+
+Before starting the flow we have to check required inputs are placed in the respective folder to run properly. All the designs are placed under ~/openlane_flow_designs/. We have to check the /designs folder to get the required block for our flow. Within the Chosen design we can see the source files and configuration files.
+
+![](images/109.png)
+
+Source files (/src folder) will contain verilog files and sdc constraint files. Configuration files contain design's configuration file for running the flow. 
+
+![](images/108.png)
+<h3 align="center">config.tcl</h3>
+
