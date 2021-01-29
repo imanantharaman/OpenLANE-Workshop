@@ -34,9 +34,8 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#decoupling-capacitors">Decoupling Capacitors</a></li>
         <li><a href="#power-planning">Power Planning</a></li>
         <li><a href="#pin-placement">Pin Placement</a></li>
-        <li><a href="#floorplanning-in-eda">Floorplanning in EDA</a></li>
-        <li><a href="#placement">Placement</a></li>
-        <li><a href="#placement-in-magic-tool">Placement in Magic Tool</a></li>
+        <li><a href="#floorplan-in-eda">Floorplan in EDA</a></li>
+        <li><a href="#placement-in-eda">Placement in EDA</a></li>
         <li><a href="#standard-cell-design-flow">Standard Cell Design Flow</a></li>
         <li><a href="#standard-cell-characterization">Standard Cell Characterization</a></li>
       </ul>
@@ -212,7 +211,7 @@ Power planning means to provide power to every macros, standard cells, and all o
 
 The goal of pin placement is to use the connectivity information of the HDL netlist to determine where along the I/O ring a specific pin should be placed. Clock port will be bigger than the data port. Block the area with blockage so that automated PnR doesn't place the cell in the particular area. That area will be reserved for pin location. 
 
-### Floorplanning in EDA
+### Floorplan in EDA
 
 To run the Floorplan use the following command : 
 
@@ -232,7 +231,7 @@ The Magic tool will show the floorplan for the given design:
 
 ![](images/114.png)
 
-### Placement
+### Placement in EDA
 
 This step will bind the netlist with the physical cells. Netlist will give physical values to the cells. OpenLANE will do the placement in two stages. Global placement and Detailed Placement. 
 Global placement - the course placement i.e., approximate location for each cell is done. The reduction of HPWL is the main focus. Half Parameter Wire Length (HPWL) is used to reduce the wire length.
@@ -242,7 +241,7 @@ To run the placement use the following command :
 
 ![](images/115.png)
 
-Reports after completion of Floorplan: 
+Reports after completion of Placement: 
 
 ![](images/116.png)
 
