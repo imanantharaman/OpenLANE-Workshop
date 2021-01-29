@@ -25,7 +25,23 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#design-preparation">Design preparation</a></li>
         <li><a href="#synthesis">Synthesis</a></li>
       </ul>
-    </li>    
+    </li> 
+    <li>
+      <a href="#day-2-chip-floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
+      <ul>
+        <li><a href="#height-&-width">Height & Width</a></li>
+        <li><a href="#preplaced-cells">Preplaced Cells</a></li>
+        <li><a href="#decoupling-capacitors">Decouping Capacitors</a></li>
+        <li><a href="#power-planning">Power Planning</a></li>
+        <li><a href="#pin-placement">Pin Placement</a></li>
+        <li><a href="#floorplanning-with-openlane">Floorplanning with OpenLANE</a></li>
+        <li><a href="#floorplan-in-magic-tool">Floorplan in Magic Tool</a></li>
+        <li><a href="#placement">Placement</a></li>
+        <li><a href="#placement-in-magic-tool">Placement in Magic Tool</a></li>
+        <li><a href="#standard-cell-design-flow">Standard Cell Design Flow</a></li>
+        <li><a href="#standard-cell-characterization">Standard Cell Characterization</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
   
