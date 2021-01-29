@@ -195,3 +195,8 @@ To run synthesis we will use the Yosys software.
 The dimensions of the core and die will give us the details about Utilization and Aspect ration. 
 Utilization Factor will give the amount of area which is occupied by the cells specifies in the netlist. Utilization Factor is calculated as (occupied cells area)/ total core area.
 Aspect Ration will give us the shape of the chip. Aspect ratio is calculated as the ratio of the height of the core to the width of the core. 
+
+### Preplaced Cells
+
+The functionality of these cells is already placed in the core area by the top-level designer. The arrangement of these IP's in a chip is referred to as Floorplanning. These IP's / blocks have user-defined locations and hence it is placed in chip before automated PnR are called pre-placed cells. Automated PnR will places the remaining logic cells in the design onto the chip. 
+
