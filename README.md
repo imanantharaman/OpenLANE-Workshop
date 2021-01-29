@@ -262,9 +262,7 @@ Standard cell design is divided into three categories:
   2. Design Steps
   3. Outputs
 
-Inputs -  DRC & LVS rules, SPICE Models, Library& User defined Specs.
-
-Design Steps - Circuit Design, Layout Design, Characterization.
-
-Outputs - Circuit description language (CDL), GDSII, LEF, Extracted spice netlist (.cir) 
+<li>Inputs -  DRC & LVS rules, SPICE Models, Library& User defined Specs.</li>
+<li>Design Steps - Circuit Design, Layout Design, Characterization.</li>
+<li>Outputs - Circuit description language (CDL), GDSII, LEF, Extracted spice netlist (.cir) </li>
 
