@@ -71,9 +71,12 @@ Routing is the process which will create routing guides to implement the actual 
 
 ### OpenLANE ASIC FLOW
 
-OpenLANE flow performs full ASIC implementation steps from RTL all the way down to GDSII.OpenLANE flow consists of several stages. Each stage may consist of multiple sub-stages.
+OpenLANE flow performs full ASIC implementation steps from RTL all the way down to GDSII.OpenLANE flow consists of several stages which again consists of multiple sub-stages. 
+It is started as an Open-source flow for a true open source tape-out experiment. It has two modes of Operation Interactive and Autonomous. It has Design Space Exploration which will find the best set of flow configuration from a large number of designs. Design exploration Utility is also used for regression testing. DFT is used for Scan insertion, Test pattern compaction, ATPG, etc.,. Physical Implementation is also called Automated PnR. Logic Equivalence Check is used to formally confirm that the function didn't change after modifying the netlist.
 
 ![](images/102.png)
+
+The tools and flow which are used in the openlane Flow for the process is mentioned below.
 
 1. Synthesis
   - yosys - Performs RTL synthesis
