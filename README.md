@@ -226,5 +226,3 @@ To open the floorplan in Magic tool use the following command:
 
 'magic -T <magic tech file> lef read <lef file> def read <def file>'
   
-
-
