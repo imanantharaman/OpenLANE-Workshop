@@ -73,6 +73,7 @@ Routing is the process which will create routing guides to implement the actual 
 
 OpenLANE flow performs full ASIC implementation steps from RTL all the way down to GDSII.OpenLANE flow consists of several stages. Each stage may consist of multiple sub-stages.
 
+![](images/102.png)
 
 1. Synthesis
   - yosys - Performs RTL synthesis
