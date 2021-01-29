@@ -218,11 +218,11 @@ To run the Floorplan use the following command :
 
 ![](images/112.png)
 
-The following diadram will gbe given out as the floorplan completion
+The following diagram will be given out as the floorplan completion
 
 ![](images/111.png)
 
 To open the floorplan in Magic tool use the following command: 
 
-'magic -T <magic tech file> lef read <lef file> def read <def file>'
+`magic -T <magic tech file> lef read <lef file> def read <def file>`
   
