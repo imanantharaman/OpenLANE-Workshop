@@ -69,3 +69,38 @@ Clock Tree Synthesis is the process of creating a clock distribution network to 
 
 Routing is the process which will create routing guides to implement the actual wiring.
 
+### OpenLANE ASIC FLOW
+
+OpenLANE flow performs full ASIC implementation steps from RTL all the way down to GDSII.OpenLANE flow consists of several stages. Each stage may consist of multiple sub-stages.
+
+
+1. Synthesis
+  - yosys - Performs RTL synthesis
+  - abc - Performs technology mapping
+  - OpenSTA - Pefroms static timing analysis on the resulting netlist to generate timing reports
+  
+2. Floorplan and PDN
+  - init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
+  - ioplacer - Places the macro input and output ports
+  - pdn - Generates the power distribution network
+  
+3. Placement
+  - RePLace - Performs global placement
+  - Resizer - Performs optional optimizations on the design
+  - OpenPhySyn - Performs timing optimizations on the design
+  - OpenDP - Perfroms detailed placement to legalize the globally placed components
+  
+4. CTS
+  - TritonCTS - Synthesizes the clock distribution network (clock tree)
+  
+5. Routing 
+  - FastRoute - Performs global routing to generate a guide file for the detailed router
+  - TritonRoute - Performs detailed routing
+  - SPEF-Extractor - Performs SPEF extraction
+  
+6. GDSII Generation
+  - Magic - Streams out the final GDSII layout file from the routed def
+  
+7. Checks
+  - Magic - Performs DRC Checks & Antenna Checks
+  - Netgen - Performs LVS Checks
