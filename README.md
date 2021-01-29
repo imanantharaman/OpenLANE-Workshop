@@ -218,7 +218,7 @@ To run the Floorplan use the following command :
 
 ![](images/112.png)
 
-The following diagram will be given out as the floorplan completion
+Reports after completion of Floorplan: 
 
 ![](images/111.png)
 
@@ -231,3 +231,28 @@ To open the floorplan in Magic tool use the following command:
 The Magic tool will show the floorplan for the given design: 
 
 ![](images/114.png)
+
+### Placement
+
+This step will bind the netlist with the physical cells. Netlist will give physical values to the cells. OpenLANE will do the placement in two stages. Global placement and Detailed Placement. 
+Global placement - the course placement i.e., approximate location for each cell is done. The reduction of HPWL is the main focus. Half Parameter Wire Length (HPWL) is used to reduce the wire length.
+Detailed Placement  - Standard cells are placed in Standard cell rows. It can be abutted but it will not do overlap of cells. Legalization is done which is useful in a reduction in timing violations.
+
+To run the placement use the following command :
+
+![](images/115.png)
+
+Reports after completion of Floorplan: 
+
+![](images/116.png)
+
+To open the Placement in Magic tool use the following command: 
+
+`magic -T <magic tech file> lef read <lef file> def read <def file>`
+  
+![](images/117.png)
+
+The Magic tool will show the Placement for the given design: 
+
+![](images/118.png)
+
