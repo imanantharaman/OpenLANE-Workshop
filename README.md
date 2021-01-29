@@ -266,3 +266,15 @@ Standard cell design is divided into three categories:
 <li>Design Steps - Circuit Design, Layout Design, Characterization.</li>
 <li>Outputs - Circuit description language (CDL), GDSII, LEF, Extracted spice netlist (.cir) </li>
 
+### Standard Cell Characterization
+
+The open-source software GUNA is used for characterization. Characterization is a well-defined flow consisting of the following steps:
+  1. Reading the model.
+  2. Read Extracted SPICE Netlist.
+  3. Recognize behaviour os the cell.
+  4. Read the subcircuit of the design.
+  5. Attach necessary power sources.
+  6. Attach Stimulus.
+  7. Provide Necessary Capacitance.
+  8. Provide necessary simulation commands.
+  
