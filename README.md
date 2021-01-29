@@ -121,6 +121,8 @@ The Skywater PDK files we are working with are described under ~/PDKS. There are
   -  Open_pdks – Contains scripts that are used to bridge the gap between closed-source and open-source PDK to EDA tool compatibility
   -  Sky130A – PDK files which are open-source compatible.
   
+ ![](images/107.png) 
+  
 Inside Sky130A there will be two files which are related to process specific files and tool specific files
 
 ![](images/103.png)
