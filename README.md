@@ -148,3 +148,22 @@ Source files (/src folder) will contain verilog files and sdc constraint files. 
 ![](images/108.png)
 <h3 align="center">config.tcl</h3>
 
+### Synthesis
+
+The flow will start with synthesis. 
+
+./flow.tcl -interactive is the script which runs the OpenLANE flow and we will do it in interactive move.
+Different software dependencies are needed to run OpenLANE. To import these we need to run: pacakage require openlane 0.9
+prep -design <design_name> -tag <run_name> is used to make file structure for our design.
+This command merges the cell LEF and technology LEF information and name it as merged.lef 
+After running this look in the ~/design/picorv32a folder and you will see runs folder being created
+
+![](images/110.png)
+
+![](images/110_1.png)
+
+To run synthesis type %run_synthesis.
+To run synthesis we will use the Yosys software.
+
+
+
