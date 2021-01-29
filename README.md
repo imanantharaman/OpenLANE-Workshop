@@ -40,6 +40,18 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#standard-cell-characterization">Standard Cell Characterization</a></li>
       </ul>
     </li>
+        <li>
+      <a href="#day-3-design-library-cell">Day 3 - Design Library Cell</a>
+      <ul>
+        <li><a href="#spice-simulations">Spice Simulations</a></li>
+        <li><a href="#dc-characteristics-of-a-cmos-inverter">DC Characteristics of a CMOS Inverter</a></li>
+        <li><a href="#16-mask-cmos-process-steps">16 Mask CMOS Process Steps</a></li>
+        <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
+        <li><a href="#drc-errors">DRC Errors</a></li>
+        <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
+        <li><a href="#spice-wrapper-for-simulation">Spice Wrapper for Simulation</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
   
