@@ -41,11 +41,11 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
       </ul>
     </li>
         <li>
-      <a href="#day-3-design-library-cell">Day 3 - Design Library Cell</a>
+      <a href="#day-3-designing-of-a-library-cell">Day 3 - Designing of a Library Cell</a>
       <ul>
         <li><a href="#spice-simulations">Spice Simulations</a></li>
         <li><a href="#dc-characteristics-of-a-cmos-inverter">DC Characteristics of a CMOS Inverter</a></li>
-        <li><a href="#16-mask-cmos-process-steps">16 Mask CMOS Process Steps</a></li>
+        <li><a href="#16-mask-cmos-process-steps">16-Mask CMOS Process Steps</a></li>
         <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
         <li><a href="#drc-errors">DRC Errors</a></li>
         <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
@@ -290,3 +290,19 @@ The open-source software GUNA is used for characterization. Characterization is 
   7. Provide Necessary Capacitance.
   8. Provide necessary simulation commands.
   
+<!-- Day 3 Designing of a Library Cell -->
+## Day 3 Designing of a Library Cell
+
+### 16-Mask CMOS Process Steps
+
+Following steps are followed for the formation of 16-Mask CMOS Process:
+
+  1. Select a Substrate
+  2. Create Active region for transmission
+  3. N-Well & P-Well formation
+  4. Formation of a Gate
+  5. Lightly Doped Drain (LDD) Formation
+  6. Source & Drain Formation
+  7. Formation of Contacts & Interconnects
+  8. Higher Level Metal Formation 
+
