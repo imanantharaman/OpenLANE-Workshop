@@ -255,3 +255,14 @@ The Magic tool will show the Placement for the given design:
 
 ![](images/118.png)
 
+### Standard Cell Design Flow
+
+Standard cell design is divided into three categories: 
+  1. Inputs
+  2. Design Steps
+  3. Outputs
+
+Inputs -  DRC & LVS rules, SPICE Models, Library& User defined Specs.
+Design Steps - Circuit Design, Layout Design, Characterization.
+Outputs - Circuit description language (CDL), GDSII, LEF, Extracted spice netlist (.cir) 
+
