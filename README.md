@@ -133,3 +133,4 @@ libs.ref Contains process specific files
 libs.tech Contains files specific to tools such as Magic, ngspice etc.,.
 
 
+![](images/106.png)
