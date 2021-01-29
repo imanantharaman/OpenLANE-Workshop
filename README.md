@@ -187,3 +187,11 @@ To run synthesis we will use the Yosys software.
 ![](images/110_1.png)
 
 
+<!-- Day 2 Floorplanning and Standard Cells -->
+## Day 2 Floorplanning and Standard Cells
+
+### Height & Width
+
+The dimensions of the core and die will give us the details about Utilization and Aspect ration. 
+Utilization Factor will give the amount of area which is occupied by the cells specifies in the netlist. Utilization Factor is calculated as (occupied cells area)/ total core area.
+Aspect Ration will give us the shape of the chip. Aspect ratio is calculated as the ratio of the height of the core to the width of the core. 
