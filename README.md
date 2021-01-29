@@ -87,6 +87,7 @@ The tools and flow which are used in the openlane Flow for the process is mentio
   - init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
   - ioplacer - Places the macro input and output ports
   - pdn - Generates the power distribution network
+  - tapcell - Inserts welltap and decap cells in the floorplan
   
 3. Placement
   - RePLace - Performs global placement
@@ -108,3 +109,19 @@ The tools and flow which are used in the openlane Flow for the process is mentio
 7. Checks
   - Magic - Performs DRC Checks & Antenna Checks
   - Netgen - Performs LVS Checks
+
+
+### Skywater Files
+
+The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+Process Design Kit (PDK) which is a collection of files used to model a fabrication process for the EDA tools to produce an IP.
+
+The Skywater PDK files we are working with are described under ~/PDKS. There are three subdirectories needed for the workshop:
+  -  Skywater-pdk – PDK which are related to foundary.
+  -  Open_pdks – Contains scripts that are used to bridge the gap between closed-source and open-source PDK to EDA tool compatibility
+  -  Sky130A – PDK files which are open-source compatible.
+  
+Inside Sky130A there will be two files which are related to process specific files and tool specific files
+
+![](images/103.png)
+
