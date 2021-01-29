@@ -125,3 +125,11 @@ Inside Sky130A there will be two files which are related to process specific fil
 
 ![](images/103.png)
 
+libs.ref Contains process specific files 
+  - (EX:) sky130_fd_sc_hd ; sky130 represent process name, fd represent foundary name (skywater) , sc represent for standard cell, hd represent for high density.
+  
+![](images/104.png)
+
+libs.tech Contains files specific to tools such as Magic, ngspice etc.,.
+
+
