@@ -29,9 +29,9 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
     <li>
       <a href="#day-2-chip-floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
       <ul>
-        <li><a href="#height-&-width">Height & Width</a></li>
+        <li><a href="#height-and-width">Height and Width</a></li>
         <li><a href="#preplaced-cells">Preplaced Cells</a></li>
-        <li><a href="#decoupling-capacitors">Decouping Capacitors</a></li>
+        <li><a href="#decoupling-capacitors">Decoupling Capacitors</a></li>
         <li><a href="#power-planning">Power Planning</a></li>
         <li><a href="#pin-placement">Pin Placement</a></li>
         <li><a href="#floorplanning-with-openlane">Floorplanning with OpenLANE</a></li>
@@ -190,7 +190,7 @@ To run synthesis we will use the Yosys software.
 <!-- Day 2 Floorplanning and Standard Cells -->
 ## Day 2 Floorplanning and Standard Cells
 
-### Height & Width
+### Height and Width
 
 The dimensions of the core and die will give us the details about Utilization and Aspect ration. 
 Utilization Factor will give the amount of area which is occupied by the cells specifies in the netlist. Utilization Factor is calculated as (occupied cells area)/ total core area.
@@ -200,3 +200,9 @@ Aspect Ration will give us the shape of the chip. Aspect ratio is calculated as 
 
 The functionality of these cells is already placed in the core area by the top-level designer. The arrangement of these IP's in a chip is referred to as Floorplanning. These IP's / blocks have user-defined locations and hence it is placed in chip before automated PnR are called pre-placed cells. Automated PnR will places the remaining logic cells in the design onto the chip. 
 
+### Decoupling Capacitors
+
+Due to logic physical Distance from main power supply to any circuit, we can't guarantee that logic 1/0 obtained in that logic. So we will use Decoupling capacitors.  
+Decoupling Capacitor will be filled with charges. When the circuit switches, it gets power from the Decoupling capacitors.  Since it will be placed close to that circuit, it will have hardly any voltage drop. 
+
+### Power Planning
