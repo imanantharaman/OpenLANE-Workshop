@@ -34,8 +34,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#decoupling-capacitors">Decoupling Capacitors</a></li>
         <li><a href="#power-planning">Power Planning</a></li>
         <li><a href="#pin-placement">Pin Placement</a></li>
-        <li><a href="#floorplanning-with-openlane">Floorplanning with OpenLANE</a></li>
-        <li><a href="#floorplan-in-magic-tool">Floorplan in Magic Tool</a></li>
+        <li><a href="#floorplanning-in-eda">Floorplanning in EDA</a></li>
         <li><a href="#placement">Placement</a></li>
         <li><a href="#placement-in-magic-tool">Placement in Magic Tool</a></li>
         <li><a href="#standard-cell-design-flow">Standard Cell Design Flow</a></li>
@@ -206,3 +205,26 @@ Due to logic physical Distance from main power supply to any circuit, we can't g
 Decoupling Capacitor will be filled with charges. When the circuit switches, it gets power from the Decoupling capacitors.  Since it will be placed close to that circuit, it will have hardly any voltage drop. 
 
 ### Power Planning
+
+Power planning means to provide power to every macros, standard cells, and all other cells are present in the design. Power and Ground nets are usually laid out on the metal layers. This step will create crosstalk which will disrupt the signals flowing in the layers.
+
+### Pin Placement
+
+The goal of pin placement is to use the connectivity information of the HDL netlist to determine where along the I/O ring a specific pin should be placed. Clock port will be bigger than the data port. Block the area with blockage so that automated PnR doesn't place the cell in the particular area. That area will be reserved for pin location. 
+
+### Floorplanning in EDA
+
+To run the Floorplan use the following command : 
+
+![](images/112.png)
+
+The following diadram will gbe given out as the floorplan completion
+
+![](images/111.png)
+
+To open the floorplan in Magic tool use the following command: 
+
+'magic -T <magic tech file> lef read <lef file> def read <def file>'
+  
+
+
