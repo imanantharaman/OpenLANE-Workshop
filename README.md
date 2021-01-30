@@ -378,3 +378,17 @@ Library Exchange Format (LEF) is a specification for representing the physical l
 On-track standard cell pin placement is essential for DRC free PnR flow. 
 
   ![](images/401.png)
+
+### LEF Generation in Magic
+
+Magic allows users to generate cell LEF information directly from the Magic terminal. To generate the cell LEF file from Magic perform: `lef write`
+
+  ![](images/402.png)
+  
+The LEF file is created 
+
+  ![](images/407.png)
+  
+### Custom Cells in OpenLANE Flow
+
+After we extracted the LEF information we can add our custom cell into our OpenLANE Flow. OpenLANE flow will allow the user to add custom cells on the fly.
