@@ -27,7 +27,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
       </ul>
     </li> 
     <li>
-      <a href="#day-2-chip-floorplanning-and-standard-cells">Day 2 - Floorplanning and Standard Cells</a>
+      <a href="#day-2-floorplanning-and-standard-cells">Day 2 Floorplanning and Standard Cells</a>
       <ul>
         <li><a href="#height-and-width">Height and Width</a></li>
         <li><a href="#preplaced-cells">Preplaced Cells</a></li>
@@ -43,7 +43,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li>
       <a href="#day-3-designing-of-a-library-cell">Day 3 - Designing of a Library Cell</a>
       <ul>
-        <li><a href="#voltage-transfer-characteristics-spice-simulations">Voltage Transfer Characteristics - Spice Simulations</a></li>
+        <li><a href="#voltage-transfer-characteristics-spice-simulations">Voltage Transfer Characteristics Spice Simulations</a></li>
         <li><a href="#16-mask-cmos-process-steps">16-Mask CMOS Process Steps</a></li>
         <li><a href="#standard-cell-in-magic-tool">Standard Cell in Magic Tool</a></li>
         <li><a href="#drc-errors">DRC Errors</a></li>
@@ -292,7 +292,7 @@ The open-source software GUNA is used for characterization. Characterization is 
 <!-- Day 3 Designing of a Library Cell -->
 ## Day 3 Designing of a Library Cell
 
-### Voltage Transfer Characteristics - Spice Simulations
+### Voltage Transfer Characteristics Spice Simulations
 
 The SPICE deck formation consists of component connectivity, component values, Identifying the Nodes. In this Substrate, W/L values have to be mentioned. Input voltage will mostly be the multiple of L. 
 
@@ -331,3 +331,5 @@ We are going to add custom cell in our design. we will add the cell which is alr
 To invoke Magic:
 
   ![](images/303.png)
+  
+  ![](images/302.png)
