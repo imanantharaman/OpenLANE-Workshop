@@ -56,7 +56,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#lef-files-and-pin-placement">LEF Files and Pin Placement</a></li>
         <li><a href="#lef-generation-in-magic">LEF Generation in Magic</a></li>
         <li><a href="#custom-cells-in-openlane-flow">Custom Cells in OpenLANE Flow</a></li>
-        <li><a href="#fixing-slack-violations">Fixing Slack Violations</a></li>
+        <li><a href="#fixing-timing-violations">Fixing Timing Violations</a></li>
         <li><a href="#clock-tree-synthesis">Clock Tree Synthesis</a></li>
         <li><a href="#post-cts-sta-analysis">Post-CTS STA Analysis</a></li>
       </ul>
@@ -391,4 +391,65 @@ The LEF file is created
   
 ### Custom Cells in OpenLANE Flow
 
-After we extracted the LEF information we can add our custom cell into our OpenLANE Flow. OpenLANE flow will allow the user to add custom cells on the fly.
+After we extracted the LEF information we can add our custom cell into our OpenLANE Flow. OpenLANE flow will allow the user to add custom cells on the fly. In order to include the new cells in OpenLANE we need to do some initial configuration:
+
+  1.  characterize the new cell with specified corners using GUNA tool.
+  2.  Include cell level liberty file in top level liberty file
+  3.  Reconfigure synthesis switches in the config.tcl file by adding the corner which is added to the custom cell:
+  
+   ![](images/403.png)
+   
+Note: This step will also include any extra LEF files generated for the custom standard cell(s). 
+
+  4. Overwrite the run to add the new configuration files to the flow.
+  5. Add additional LEFs to the file by
+  
+    `set lef [glob $::env(DESIGN_DIR)/src/*.lef]`
+    
+    `add_lefs -src $lefs`
+    
+ Custom Cell is added in the flow. The below diagram shows the custom cell addition in the design
+ 
+   ![](images/404.png)
+    
+### Fixing Timing Violations
+
+There are two violations we have to fix in a design. One is Setup and another one is hold. Since there won't any clock tree till now we have to focus on fixing Setup time violations. Setup violations can be fixed in many ways like reducing the amount of delay in the data path, upsizing the cells, VT swapping etc. We will do Setup violation fixing by upsizing the buffer. 
+
+   ![](images/405.png)
+   
+### Clock Tree Synthesis   
+
+Clock Tree is the distribution of the clock to the sequential circuits. Specialized Clock buffers are used for the clock tree which has the same rise and fall delay. There are many types of clock tree available H-Tree, X-Tree etc.  The clock tree is created which you can see the below figure 
+
+   ![](images/408.png)
+   
+### Post-CTS STA Analysis
+
+We will use the OpenROAD flow since it has the OpenSTA software build in it. We will perform STA analysis in  OpenLANE flow by invoking OpenROAD. Since it is constrained for only one corner in the tool we have to check the specified corner only. In our flow, we will use the only typical corner.
+
+Use the following commands for post-cts STA analysis
+
+  `openroad`
+  
+  `read_lef <lef_location>`
+  
+  `read_def <def_location>`
+  
+  `write_db <db_location>`
+  
+  `read_db <db_location>`
+  
+  `read_verilog <verilog_location>`
+  
+  `read_liberty <liberty_location>`
+  
+  `read_sdc <sdc_location>`
+  
+  `set_propagated_clock [all_clocks]`
+  
+  `report_checks -path_delay nim_max -format full_clock_expanded -digits 4`
+  
+
+
+
