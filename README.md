@@ -94,24 +94,24 @@ One of two design methods may be employed while creating the HDL of a microarchi
   - RTL Design
   - Behavioral Modeling
 
-RTL (Register Transfer Level) is used to create high-level representations of a circuit using Verilog and/or VHDL.  EDA tools will use the HDL to perform mapping of higher-level components to the transistor level needed for physical implementation.
+  - RTL (Register Transfer Level) is used to create high-level representations of a circuit using Verilog and/or VHDL.  EDA tools will use the HDL to perform mapping of higher-level components to the transistor level needed for physical implementation.
 Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed.
 
-RTL Verification - Behavioral verification of design will be performed using testbenches.
+  - RTL Verification - Behavioral verification of design will be performed using testbenches.
 
-Synthesis is a process which converts RTL to a circuit out of components from the cell library. Synthesis will do three important steps which are Translation, optimization and mapping. Post-Synthesis STA Analysis is performed on different path groups.
+  - Synthesis is a process which converts RTL to a circuit out of components from the cell library. Synthesis will do three important steps which are Translation, optimization and mapping. Post-Synthesis STA Analysis is performed on different path groups.
 
-Partition process is converting the complex system into smaller sub-systems. For chip-level Implementation, Partition is needed and for block-level implementation, it is already performed and necessary data is given for the flow.
+  - Partition process is converting the complex system into smaller sub-systems. For chip-level Implementation, Partition is needed and for block-level implementation, it is already performed and necessary data is given for the flow.
 
-Floorplanning is the process of placing blocks/macros in the chip/core area. Dimensions, Pin locations and Rows definition are defined in this process. 
+  - Floorplanning is the process of placing blocks/macros in the chip/core area. Dimensions, Pin locations and Rows definition are defined in this process. 
  
-Power planning is the process of creating the power mesh which is used to connect power pins to all components in the circuit.
+  - Power planning is the process of creating the power mesh which is used to connect power pins to all components in the circuit.
 
-Placement is the process which will place the cells on the floorplan rows. 
+  - Placement is the process which will place the cells on the floorplan rows. 
 
-Clock Tree Synthesis is the process of creating a clock distribution network to deliver the clock to all sequential elements.
+  - Clock Tree Synthesis is the process of creating a clock distribution network to deliver the clock to all sequential elements.
 
-Routing is the process which will create routing guides to implement the actual wiring.
+  - Routing is the process which will create routing guides to implement the actual wiring.
 
 ### OpenLANE ASIC FLOW
 
@@ -468,7 +468,7 @@ Use the following commands for post-cts STA analysis
 
 ### Power Distribution Network (PDN)
 
-In our openLANE flow, PDN is not developed in the floorplan stage. It is developed after CTS Stage and before Routing. Power distribution networks deliver the power and the ground voltages from pad locations to all devices in a design. The PDN feature within OpenLANE will create:
+Power distribution networks deliver the power and the ground voltages from pad locations to all devices in a design. In our openLANE flow, PDN is not developed in the floorplan stage. It is developed after CTS Stage and before Routing. The PDN feature within OpenLANE will create:
 
   1.  Power ring global to the entire core
   2.  Power halo local to any preplaced cells
@@ -485,9 +485,17 @@ The Power distribution network will give:
    
 ### Routing
 
+Routing determines the paths for interconnection of the standard cell and macro pins, the pins on the block boundary or pads at the chip boundary. There are two types of routing: Global and Detailed routing. 
+  - In Global routing, the rough route is determined by calculating the number of tracks available in each region. 
+  - In Detailed routing, the actual connection between all the nets takes place and it will creates the actual via and metal connections. 
+  
+Global routing is done by FastRoute and Detailed routing is done by TritonRoute.
+
    ![](images/501.png)
    
 ### SPEF Extraction
+
+
 
    ![](images/504.png)
 
