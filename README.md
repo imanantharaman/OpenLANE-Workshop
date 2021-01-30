@@ -61,6 +61,14 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#post-cts-sta-analysis">Post-CTS STA Analysis</a></li>
       </ul>
     </li>
+        <li>
+      <a href="#day-5-routing-and-spef">Day 5 Routing and SPEF</a>
+      <ul>
+        <li><a href="#power-distribution-network-generation-pdn">Power Distribution Network (PDN)</a></li>
+        <li><a href="#routing">Routing</a></li>
+        <li><a href="#spef-extraction">SPEF Extraction</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
   
@@ -454,6 +462,7 @@ Use the following commands for post-cts STA analysis
   
   `report_checks -path_delay nim_max -format full_clock_expanded -digits 4`
   
-
+<!-- Day 5 Routing and SPEF -->
+## Day 5 Routing and SPEF
 
 
