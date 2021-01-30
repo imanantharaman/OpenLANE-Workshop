@@ -481,3 +481,14 @@ We have to check whether CURRENT_DEF is from CTS and run  `gen_pdn`
 The Power distribution network will give: 
 
    ![](images/502.png)
+   
+### Routing
+
+   ![](images/501.png)
+   
+### SPEF Extraction
+
+   ![](images/504.png)
+
+
+
