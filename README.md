@@ -300,7 +300,7 @@ Standard cell design is divided into three categories:
 ### Standard Cell Characterization
 
 The open-source software GUNA is used for characterization. Characterization is a well-defined flow consisting of the following steps:
-  1. Reading the model.
+  1. Read the model.
   2. Read Extracted SPICE Netlist.
   3. Recognize behaviour os the cell.
   4. Read the subcircuit of the design.
