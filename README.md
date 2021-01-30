@@ -366,6 +366,8 @@ The extracted SPICE
 
 ### Spice Wrapper for Simulation
 
+We will additionally add the `trans` value for the SPICE simulation
+
 ![](images/306.png)
 
 To  invoke the ngspice tool : `ngspice sky130_inv.spice`
