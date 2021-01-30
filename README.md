@@ -341,5 +341,5 @@ To extract the parasitic spice file for the associated layout one needs to creat
   
 The extracted SPICE 
 
-  ![](images/304.png)
+  ![](images/305.png)
 
