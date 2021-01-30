@@ -64,7 +64,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li>
       <a href="#day-5-routing-and-spef">Day 5 Routing and SPEF</a>
       <ul>
-        <li><a href="#power-distribution-network-generation-pdn">Power Distribution Network (PDN)</a></li>
+        <li><a href="#power-distribution-network-pdn">Power Distribution Network (PDN)</a></li>
         <li><a href="#routing">Routing</a></li>
         <li><a href="#spef-extraction">SPEF Extraction</a></li>
       </ul>
@@ -465,4 +465,19 @@ Use the following commands for post-cts STA analysis
 <!-- Day 5 Routing and SPEF -->
 ## Day 5 Routing and SPEF
 
+### Power Distribution Network (PDN)
 
+In our openLANE flow, PDN is not developed in the floorplan stage. It is developed after CTS Stage and before Routing. Power distribution networks deliver the power and the ground voltages from pad locations to all devices in a design. The PDN feature within OpenLANE will create:
+
+  1.  Power ring global to the entire core
+  2.  Power halo local to any preplaced cells
+  3.  Power straps to bring power into the center of the chip
+  4.  Power rails for the standard cells
+
+We have to check whether CURRENT_DEF is from CTS and run  `gen_pdn`
+
+   ![](images/503.png)
+   
+The Power distribution network will give: 
+
+   ![](images/502.png)
