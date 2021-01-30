@@ -69,6 +69,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#spef-extraction">SPEF Extraction</a></li>
       </ul>
     </li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
   
@@ -491,4 +492,7 @@ The Power distribution network will give:
    ![](images/504.png)
 
 
-
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Nickson Jose - VSD VLSI Engineer](https://github.com/nickson-jose)
+* [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
