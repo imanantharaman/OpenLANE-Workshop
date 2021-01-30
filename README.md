@@ -498,10 +498,9 @@ Global routing is done by FastRoute and Detailed routing is done by TritonRoute.
    
 ### SPEF Extraction
 
-
+Standard Parasitic Exchange Format (SPEF) is for representing parasitic resistance and capacitance of wires in a chip. SPEF is used for delay calculation and ensuring signal integrity of a chip which eventually determines its speed of operation. SPEF Extractor is not included in the OpenLANE flow. This SPEF value will be used for the calculation of post-route STA analysis.
 
    ![](images/504.png)
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
