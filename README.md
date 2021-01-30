@@ -389,6 +389,10 @@ The LEF file is created
 
   ![](images/407.png)
   
+Content of generated LEF:
+
+  ![](images/409.png)
+  
 ### Custom Cells in OpenLANE Flow
 
 After we extracted the LEF information we can add our custom cell into our OpenLANE Flow. OpenLANE flow will allow the user to add custom cells on the fly. In order to include the new cells in OpenLANE we need to do some initial configuration:
