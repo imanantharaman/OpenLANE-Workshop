@@ -108,7 +108,7 @@ Behavioral Modeling – Allows the microarchitecture modeling to be performed wi
  
   - Power planning is the process of creating the power mesh which is used to connect power pins to all components in the circuit.
 
-  - Placement is the process which will place the cells on the floorplan rows. 
+  - Placement is the process which will place the cells on the rows. 
 
   - Clock Tree Synthesis is the process of creating a clock distribution network to deliver the clock to all sequential elements.
 
