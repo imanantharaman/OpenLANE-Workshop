@@ -505,3 +505,4 @@ Global routing is done by FastRoute and Detailed routing is done by TritonRoute.
 ## Acknowledgements
 * [Nickson Jose - VSD VLSI Engineer](https://github.com/nickson-jose)
 * [Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)](https://github.com/kunalg123)
+* [Efabless - OpenLANE Flow ](https://github.com/efabless/openlane)
