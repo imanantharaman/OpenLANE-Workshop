@@ -91,8 +91,9 @@ These design and verification stages are broadly classified into two steps. One 
 In this Project, we will cover a part of Back end design flow steps starting from Synthesis and goes till Routing.
 
 One of two design methods may be employed while creating the HDL of a microarchitecture.
-  - RTL Design
-  - Behavioral Modeling
+ 
+ 1. RTL Design
+ 2. Behavioral Modeling
 
   - RTL (Register Transfer Level) is used to create high-level representations of a circuit using Verilog and/or VHDL.  EDA tools will use the HDL to perform mapping of higher-level components to the transistor level needed for physical implementation.
 Behavioral Modeling – Allows the microarchitecture modeling to be performed with behavior-based modeling in HDL. This method bridges the gap between C and HDL allowing HDL design to be performed.
