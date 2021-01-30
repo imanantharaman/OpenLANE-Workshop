@@ -46,8 +46,7 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li><a href="#voltage-transfer-characteristics-spice-simulations">Voltage Transfer Characteristics Spice Simulations</a></li>
         <li><a href="#16-mask-cmos-process-steps">16-Mask CMOS Process Steps</a></li>
         <li><a href="#standard-cell-in-magic-tool">Standard Cell in Magic Tool</a></li>
-        <li><a href="#drc-errors">DRC Errors</a></li>
-        <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
+        <li><a href="#pex-extraction-in-magic">PEX Extraction in Magic</a></li>
         <li><a href="#spice-wrapper-for-simulation">Spice Wrapper for Simulation</a></li>
       </ul>
     </li>
@@ -333,3 +332,14 @@ To invoke Magic:
   ![](images/303.png)
   
   ![](images/302.png)
+
+### PEX Extraction in Magic
+
+To extract the parasitic spice file for the associated layout one needs to create an extraction file. After generating the extracted file we need to output the .ext file to a spice file:
+
+  ![](images/304.png)
+  
+The extracted SPICE 
+
+  ![](images/304.png)
+
