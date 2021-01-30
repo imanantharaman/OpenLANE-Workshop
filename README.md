@@ -43,10 +43,9 @@ The workshop on SoC design planning in Openlane flow using the latest Google-Sky
         <li>
       <a href="#day-3-designing-of-a-library-cell">Day 3 - Designing of a Library Cell</a>
       <ul>
-        <li><a href="#spice-simulations">Spice Simulations</a></li>
-        <li><a href="#dc-characteristics-of-a-cmos-inverter">DC Characteristics of a CMOS Inverter</a></li>
+        <li><a href="#voltage-transfer-characteristics-spice-simulations">Voltage Transfer Characteristics - Spice Simulations</a></li>
         <li><a href="#16-mask-cmos-process-steps">16-Mask CMOS Process Steps</a></li>
-        <li><a href="#magic-layout-view-of-inverter-standard-cell">Magic Layout View of Inverter Standard Cell</a></li>
+        <li><a href="#standard-cell-in-magic-tool">Standard Cell in Magic Tool</a></li>
         <li><a href="#drc-errors">DRC Errors</a></li>
         <li><a href="#pex-extraction-with-magic">PEX Extraction with Magic</a></li>
         <li><a href="#spice-wrapper-for-simulation">Spice Wrapper for Simulation</a></li>
@@ -293,6 +292,23 @@ The open-source software GUNA is used for characterization. Characterization is 
 <!-- Day 3 Designing of a Library Cell -->
 ## Day 3 Designing of a Library Cell
 
+### Voltage Transfer Characteristics - Spice Simulations
+
+The SPICE deck formation consists of component connectivity, component values, Identifying the Nodes. In this Substrate, W/L values have to be mentioned. Input voltage will mostly be the multiple of L. 
+
+To do the SPICE waveform in the ngspice follow the steps below:
+  1. Open the location.
+  2. Source `<name>.cir`
+  3. use `run` command
+  4. Use `subplot` command
+    When you subplot, you will see type of plot.
+  5. type `dc1` (since it is mentioned here)
+  6. type `display` 
+  7. type `plot out vs in` to see the waveform.
+  
+  ![](images/301.png)
+
+
 ### 16-Mask CMOS Process Steps
 
 Following steps are followed for the formation of 16-Mask CMOS Process:
@@ -306,3 +322,12 @@ Following steps are followed for the formation of 16-Mask CMOS Process:
   7. Formation of Contacts & Interconnects
   8. Higher Level Metal Formation 
 
+### Standard Cell in Magic Tool
+
+Refer to: https://github.com/nickson-jose/vsdstdcelldesign for cell files.
+
+We are going to add custom cell in our design. we will add the cell which is already been developed. 
+
+To invoke Magic:
+
+  ![](images/303.png)
